@@ -9,8 +9,13 @@
 [![Supabase](https://img.shields.io/badge/Supabase-2.38-green?style=for-the-badge&logo=supabase)](https://supabase.com/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.3-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
 [![Stripe](https://img.shields.io/badge/Stripe-14-635BFF?style=for-the-badge&logo=stripe)](https://stripe.com/)
+[![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel)](https://vercel.com/)
 
-[🚀 Live Demo](https://jetpast.vercel.app) • [📖 Documentation](https://docs.jetpast.com) • [🐛 Report Bug](https://github.com/yourusername/jetpast/issues) • [✨ Request Feature](https://github.com/yourusername/jetpast/issues)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/adityash8/jetpast)
+[![GitHub stars](https://img.shields.io/github/stars/adityash8/jetpast?style=social)](https://github.com/adityash8/jetpast)
+[![GitHub forks](https://img.shields.io/github/forks/adityash8/jetpast?style=social)](https://github.com/adityash8/jetpast)
+
+[🚀 Live Demo](https://jetpast.vercel.app) • [📖 Documentation](https://docs.jetpast.com) • [🐛 Report Bug](https://github.com/adityash8/jetpast/issues) • [✨ Request Feature](https://github.com/adityash8/jetpast/issues)
 
 </div>
 
@@ -107,7 +112,7 @@ Before you begin, ensure you have the following installed:
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/yourusername/jetpast.git
+git clone https://github.com/adityash8/jetpast.git
 cd jetpast
 
 # 2. Run the setup script
@@ -129,7 +134,7 @@ npm run dev
 
 #### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/jetpast.git
+git clone https://github.com/adityash8/jetpast.git
 cd jetpast
 ```
 
@@ -391,7 +396,7 @@ We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.
 - **Email**: support@jetpast.com
 - **Discord**: [Join our community](https://discord.gg/jetpast)
 - **Documentation**: [docs.jetpast.com](https://docs.jetpast.com)
-- **Issues**: [GitHub Issues](https://github.com/yourusername/jetpast/issues)
+- **Issues**: [GitHub Issues](https://github.com/adityash8/jetpast/issues)
 
 ## 📄 License
 
@@ -411,7 +416,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Built with ❤️ for travelers who value their time.**
 
-[![GitHub stars](https://img.shields.io/github/stars/yourusername/jetpast?style=social)](https://github.com/yourusername/jetpast)
+[![GitHub stars](https://img.shields.io/github/stars/adityash8/jetpast?style=social)](https://github.com/adityash8/jetpast)
 [![Twitter Follow](https://img.shields.io/twitter/follow/jetpast?style=social)](https://twitter.com/jetpast)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat-square&logo=linkedin)](https://linkedin.com/company/jetpast)
 
