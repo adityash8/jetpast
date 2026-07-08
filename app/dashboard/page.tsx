@@ -8,10 +8,21 @@ import { useRouter } from 'next/navigation'
 import { Calendar, Clock, MapPin, CreditCard, Plus, Plane } from 'lucide-react'
 import Link from 'next/link'
 
+interface Booking {
+  id: string
+  reference: string
+  service: string
+  airport: string
+  date: string
+  time: string
+  status: string
+  price: number
+}
+
 export default function DashboardPage() {
   const { user, loading } = useAuth()
   const router = useRouter()
-  const [bookings, setBookings] = useState([])
+  const [bookings, setBookings] = useState<Booking[]>([])
 
   useEffect(() => {
     if (!loading && !user) {

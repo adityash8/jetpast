@@ -9,6 +9,20 @@ import { ServiceCard } from '@/components/service-card'
 import { SearchResults } from '@/components/search-results'
 import { Search, Filter, MapPin, Calendar, Users } from 'lucide-react'
 
+interface Service {
+  id: string
+  name: string
+  provider: string
+  price: number
+  currency: string
+  duration: number
+  rating: number
+  reviews: number
+  inclusions: string[]
+  serviceType: string
+  available: boolean
+}
+
 export default function SearchPage() {
   const searchParams = useSearchParams()
   const [searchData, setSearchData] = useState({
@@ -18,7 +32,7 @@ export default function SearchPage() {
     passengers: parseInt(searchParams.get('passengers') || '1'),
     serviceType: searchParams.get('type') || 'all'
   })
-  const [services, setServices] = useState([])
+  const [services, setServices] = useState<Service[]>([])
   const [loading, setLoading] = useState(false)
   const [showFilters, setShowFilters] = useState(false)
 
