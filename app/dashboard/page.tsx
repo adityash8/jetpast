@@ -11,7 +11,16 @@ import Link from 'next/link'
 export default function DashboardPage() {
   const { user, loading } = useAuth()
   const router = useRouter()
-  const [bookings, setBookings] = useState([])
+  const [bookings, setBookings] = useState<Array<{
+    id: string
+    reference: string
+    service: string
+    airport: string
+    date: string
+    time: string
+    status: string
+    price: number
+  }>>([])
 
   useEffect(() => {
     if (!loading && !user) {
