@@ -18,7 +18,19 @@ export default function SearchPage() {
     passengers: parseInt(searchParams.get('passengers') || '1'),
     serviceType: searchParams.get('type') || 'all'
   })
-  const [services, setServices] = useState([])
+  const [services, setServices] = useState<Array<{
+    id: string
+    name: string
+    provider: string
+    price: number
+    currency: string
+    duration: number
+    rating: number
+    reviews: number
+    inclusions: string[]
+    serviceType: string
+    available: boolean
+  }>>([])
   const [loading, setLoading] = useState(false)
   const [showFilters, setShowFilters] = useState(false)
 

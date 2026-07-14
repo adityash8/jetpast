@@ -12,7 +12,25 @@ import { formatPrice, formatDuration, getServiceTypeLabel, getServiceTypeColor }
 
 export default function ServicePage() {
   const params = useParams()
-  const [service, setService] = useState(null)
+  const [service, setService] = useState<{
+    id: string | string[]
+    name: string
+    provider: string
+    description: string
+    price: number
+    currency: string
+    duration: number
+    rating: number
+    reviews: number
+    inclusions: string[]
+    exclusions: string[]
+    requirements: string[]
+    serviceType: string
+    available: boolean
+    airport: string
+    airportName: string
+    images: string[]
+  } | null>(null)
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
