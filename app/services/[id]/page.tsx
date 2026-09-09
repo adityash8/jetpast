@@ -10,9 +10,29 @@ import { Star, Clock, Users, Check, Shield, ArrowLeft } from 'lucide-react'
 import Link from 'next/link'
 import { formatPrice, formatDuration, getServiceTypeLabel, getServiceTypeColor } from '@/lib/utils'
 
+interface Service {
+  id: string
+  name: string
+  provider: string
+  description: string
+  price: number
+  currency: string
+  duration: number
+  rating: number
+  reviews: number
+  inclusions: string[]
+  exclusions: string[]
+  requirements: string[]
+  serviceType: string
+  available: boolean
+  airport: string
+  airportName: string
+  images: string[]
+}
+
 export default function ServicePage() {
   const params = useParams()
-  const [service, setService] = useState(null)
+  const [service, setService] = useState<Service | null>(null)
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
@@ -23,7 +43,7 @@ export default function ServicePage() {
       
       // Mock service data
       const mockService = {
-        id: params.id,
+        id: String(params.id),
         name: 'Fast Track Security',
         provider: 'Marhaba Services',
         description: 'Skip the long security queues with our premium fast track service. Our dedicated staff will guide you through priority lanes, saving you valuable time before your flight.',
